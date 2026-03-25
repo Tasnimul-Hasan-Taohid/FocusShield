@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusShield</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ FocusShield</h1>
+    <p>Stay focused. Block distractions.</p>
+
+    <div class="card">
+      <h2>Add Distracting Site</h2>
+      <input type="text" id="siteInput" placeholder="e.g. youtube.com" />
+      <button onclick="addSite()">Add</button>
+      <ul id="siteList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Focus Timer</h2>
+      <input type="number" id="minutes" placeholder="Minutes" />
+      <button onclick="startTimer()">Start Focus</button>
+      <h3 id="timerDisplay">00:00</h3>
+    </div>
+
+    <div class="card">
+      <h2>Stats</h2>
+      <p>Total Focus Time Today: <span id="stats">0</span> min</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
